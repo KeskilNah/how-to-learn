@@ -229,9 +229,9 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
   height: 890px;
   position: relative;
   /*добавляем картинку с расположением по горизонтали 0, по вертикали 100%, убираем повторение*/
-  background: url(../images/feynman.png) 0 100% no-repeat ;
-    /*задаём размер картинки*/
-    background-size: 867px 637px;
+  background: url(../images/feynman.png) 0 100% no-repeat;
+  /*задаём размер картинки*/
+  background-size: 867px 637px;
   /* задаём цвет фона*/
   background-color: #f2f2f2;
 
