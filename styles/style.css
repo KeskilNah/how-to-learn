@@ -1,17 +1,3 @@
-h1,h2,h3,h4,h5,h6,p,li,ol,ul {
-  /* задаём всем заголовкам и параграфам наследовательность родительсих размеров шрифта, жирность и выстоу строки*/
-  font-size:inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-
-/* создаём класс для выравнивания блока по центру*/
-.block-position-center {
-  margin: 0 auto;
-}
 
 .page {
   min-width: 1100px;
@@ -21,6 +7,8 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
   /* выше установили ограничение по максимальной ширине */
   /* убрали отсюда центрирование, так как для этого используется класс для выравниня блока по центру */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  /*центрируем блок*/
+  margin: 0 auto;
 }
 
 .header {
@@ -59,31 +47,29 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
   flex-direction: column;
   /* центрируем его*/
   justify-content: center;
-}
-
-.header__title_contain-text {
-  /* задаём стили для текста заголовка*/
-  width: 730px;
-  margin-left: 64px;
-  z-index: 3;
-  font-size: 106px;
+  max-width: 730px;
+  margin: 0 0 0 64px;
+  font-size: 102px;
   line-height: 96px;
-  font-weight: 700;
+  font-weight: 600;
+  /*задаём позиционирование, иначе z-index не сработает*/
+  position: relative;
+  z-index: 3;
 }
 
 .header__subtitle {
+  margin: 0;
   /* задаём абсолютное позиционирование, расположение и ширину подзаголовку*/
   position: absolute;
   bottom: 30px;
   left: 64px;
-  width: 388px;
+  max-width: 388px;
   /* задаём размер шрифта, высоту строки и начертание шрифта*/
   font-size: 18px;
   line-height: 25px;
-  font-weight: normal;
+  font-weight: 400;
   /* по заданию необходимо, что бы подзаголовок был поверх других блоков, для этого используем z-index*/
   z-index: 3;
-
 }
 .header__link {
   /* убираем подчёркивание и задаём свой цвет ссылке*/
@@ -100,16 +86,9 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
   height: 608px;
   /* задаём z-index ниже чем у других блоков*/
   z-index: 2;
-}
-
-.header__picture {
-  /* задаём размеры картинки "опять двойка"*/
-  width: 765px;
-  height: 608px;
-  /* задаём покрытие блока, что бы картинка сохранила свои размеры*/
   object-fit:cover;
-
 }
+
 .header__square {
   /* задаём абсолютное позиционирование, размеры, цвет и расположение квадрату на заднем фоне*/
   position: absolute;
@@ -120,6 +99,7 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
   right: 0;
   /* задаём z-index ниже чем у главного изображения, что бы он был "под ним"*/
   z-index: 1;
+  overflow: hidden;
 }
 
 .description {
@@ -135,26 +115,28 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
 }
 
 .two-columns__brief {
+  margin: 0;
   /*задаём ширину, высоту строки, размер шрифта, начертание и цвет текста*/
-  width: 175px;
+  max-width: 175px;
   line-height: 1.2;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: #2f80ed;
 }
 
 .two-columns__main-text {
+  margin: 0;
   /*задаём ширину, высоту строки, размер шрифта, минимальную ширину и начертание*/
-  width: 80%;
+  max-width: 80%;
   line-height: 34px;
   font-size: 24px;
   min-width: 784px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 /* задаём параграфам внешний отступ снизу*/
 .two-columns__paragraph {
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 
 /* убираем у последнего элемента внешний отступ снизу*/
@@ -168,65 +150,73 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
 }
 
 .digits {
-  /* задаём отступы сверху и снизу и цетрируем блок*/
+  /* задаём отступы сверху и снизу*/
   margin: 100px auto;
 }
 
 .section-title {
+  /*центрируем блок*/
+  margin: 0 auto;
   /*задаём ширину блока, добавляем отступ снизу, высоту строки, размер шрифта, начетрание текста и распологаем текст по центру*/
-  width: 60%;
+  max-width: 60%;
   margin-bottom: 20px;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
+
 }
 
 .section-subtitle {
+  /*центрируем блок*/
+  margin: 0 auto;
   /*задаём ширину блока, высоту строки, размер шрифта, начетрание текста и распологаем текст по центру*/
-  width: 60%;
+  max-width: 60%;
   line-height: 24px;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
 }
 
 .table {
+  /*центрируем блок*/
+  /* margin: 0 auto; */
   /*создаём флекс оболочку, разрешаем перенос элементов, задаём ширину, для ровного переноса и распеределяем блоки с пространством между ними*/
   display: flex;
   flex-wrap: wrap;
   width: 1100px;
   justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .table__cell {
   /*задаём отсутп сверху для каждой ячейки и ширину ячейки*/
-  margin-top: 60px;
+  margin: 60px 0 0 0;
   width: 250px;
 }
 
 .table__heading {
   /*задаём отступ снизу, высоту строки, размер шрифта, и начертание для заголовка ячейки*/
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   line-height: 1.15;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .table__text {
   /*задаём высоту строки и размер шрифта для текста в ячейке*/
   line-height: 1.2;
   font-size: 18px;
-}
-
-.table__paragraph {
   /*задаём отступ для параграфов ячейки*/
-  margin-top: 20px;
+  margin: 20px 0 0 0;
+  font-weight: 400;
 }
 
 .feynman {
   /*здаём высотку всему блоку и относительное позиционирование*/
-  height: 890px;
+  min-height: 890px;
   position: relative;
   /*добавляем картинку с расположением по горизонтали 0, по вертикали 100%, убираем повторение*/
   background: url(../images/feynman.png) 0 100% no-repeat;
@@ -234,25 +224,29 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
   background-size: 867px 637px;
   /* задаём цвет фона*/
   background-color: #f2f2f2;
-
 }
 
 .feynman__title {
+  /*центрируем блок*/
+  margin: 0 auto;
   /*задаём заголовку внутренний отступ, ширину, центруем текст, задаём высоту текста, размер шрифта, начертание и внешний отсутп снизу*/
   padding-top: 100px;
-  width: 648px;
+  max-width: 648px;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 70px;
 }
 
 .feynman__subtitle{
+  /*центрируем блок*/
+  margin: 0 auto;
   /*центрируем подзаголовок, задаём высоту строки и размер шрифта*/
   text-align: center;
   line-height: 51px;
   font-size: 36px;
+  font-weight: 400;
 }
 
 .feynman__link {
@@ -263,13 +257,10 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
   /*задаём высоту строки, размер шрифта и цвет*/
   line-height: 51px;
   font-size: 36px;
-  color: #2f80ed;
-}
-
-.feynman__link_color {
+  font-weight: 400;
   /*убираем подчёркивание у ссылки и задаём цвет*/
-  text-decoration: none;
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .kaufman {
@@ -302,39 +293,37 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
 
 .table__heading_theme_dark {
   /*задаём отступ снизу для заголовка в таблице, высоту строки, размер шрифта и начертание*/
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   line-height: 1.15;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .table__text_theme_dark {
   /*для текста внутри таблицы задаём высоту строки, размер шрифта и начертание*/
   line-height: 1.2;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
+  margin: 0;
 }
 
 .kaufman__triangle {
   /*для треугольника на фоно задаём абсолютное позиционирование, сдвигаем его вправо на 210px и задаём z-index: 1, что бы он был на фоне*/
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
+  z-index: 1;
+  width: 877px;
+  height: 877px;
   position: absolute;
   right: -210px;
   top: 0;
-  z-index: 1;
-}
-
-.kaufman__background-image {
-  /*задаём размеры для изображения*/
-  width: 877px;
-  height: 877px;
-  object-fit: cover;
 }
 
 .footer {
   /*задаём цвет текста, цвет фона и минимальную высоту для всего блока footer */
   color: white;
   background-color: #1f1f1f;
-  min-height: 350px;
+
 }
 
 .footer__columns {
@@ -342,10 +331,12 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
   display: flex;
   width: 90%;
   justify-content: space-between;
+  margin: 0 auto;
   padding: 60px 0 40px;
+  min-height: 250px;
 }
 
-.footer__columns_content-copyright {
+.footer__column_content-copyright {
   /*задаём размер флекс элемента по-умолчанию*/
   flex-basis: 711px;
   /*создаём флекс оболочку*/
@@ -355,7 +346,7 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
   /*распологаем их с пространством между ними*/
   justify-content: space-between;
   /*задаём минимальную высоту*/
-  min-height: 250px;
+  /* min-height: 250px; */
 }
 
 .logo__image_place-footer{
@@ -370,7 +361,8 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
   padding: 18px 0;
   line-height: 25px;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
+  margin: 0;
 }
 /* задавать стили классу footer__columns_content-info не понадобилось*/
 
@@ -378,7 +370,8 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
   /*задаём высоту строки, размер шрифта и начертание для колонки с навигацией*/
   line-height: 30px;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
+  margin: 0 0 20px 0;
 }
 
 .footer__column-links {
@@ -386,25 +379,26 @@ h1,h2,h3,h4,h5,h6,p,li,ol,ul {
   line-height: 30px;
   font-size: 18px;
   font-weight: 500;
+  display: flex;
+  flex-direction: column;
 }
 
-.footer__column_color_white {
+.footer__column-link {
   /*для ссылок задаём белый цвет, убираем подчёркивание*/
   color: white;
   text-decoration: none;
+  flex-direction: row;
+  align-items: center;
 }
 
-/* задавать стили классу footer__columns_content-social не понадобилось*/
+.footer__column-link:last-child {
+  margin-bottom: 16px;
+}
 
 .footer__social-icon {
   /*задаём размеры иконок для социальных сетей*/
   width: 16px;
   height: 16px;
+  margin: 0 10px 0 0;
 }
 
-.footer__social-text {
-  /*задаём тексту отображение inline-blok для того что бы они были в одну строку*/
-  display: inline-block;
-  /*задаём отступ от иконок*/
-  padding-left: 10px;
-}
