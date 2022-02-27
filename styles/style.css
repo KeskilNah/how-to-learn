@@ -164,7 +164,8 @@
   font-size: 60px;
   font-weight: 600;
   text-align: center;
-
+  position: relative;
+  z-index: 3;
 }
 
 .section-subtitle {
@@ -172,7 +173,7 @@
   margin: 0 auto;
   /*задаём ширину блока, высоту строки, размер шрифта, начетрание текста и распологаем текст по центру*/
   max-width: 60%;
-  line-height: 24px;
+  line-height: 34px;
   font-size: 24px;
   font-weight: 400;
   text-align: center;
@@ -293,17 +294,11 @@
 
 .table__heading_theme_dark {
   /*задаём отступ снизу для заголовка в таблице, высоту строки, размер шрифта и начертание*/
-  margin: 0 0 20px 0;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .table__text_theme_dark {
   /*для текста внутри таблицы задаём высоту строки, размер шрифта и начертание*/
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: 400;
   margin: 0;
 }
 
@@ -311,19 +306,18 @@
   /*для треугольника на фоно задаём абсолютное позиционирование, сдвигаем его вправо на 210px и задаём z-index: 1, что бы он был на фоне*/
   background-image: url(../images/kaufman-triangle.svg);
   background-size: cover;
-  z-index: 1;
   width: 877px;
   height: 877px;
   position: absolute;
   right: -210px;
   top: 0;
+  z-index: 1;
 }
 
 .footer {
   /*задаём цвет текста, цвет фона и минимальную высоту для всего блока footer */
   color: white;
   background-color: #1f1f1f;
-
 }
 
 .footer__columns {
