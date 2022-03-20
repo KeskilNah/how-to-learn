@@ -1,0 +1,5 @@
+.footer__column-links {
+    /*задаём высоту строки, размер шрифта и начертание для ссылок на соцсети*/
+    display: flex;
+    flex-direction: column;
+  }

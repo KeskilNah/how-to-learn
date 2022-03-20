@@ -1,0 +1,5 @@
+.section-title_theme_dark {
+    /*задаём внутренний отсутп сверху и ширину для блока*/
+    padding-top: 90px;
+    width: 60%;
+  }

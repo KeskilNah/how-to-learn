@@ -1,0 +1,14 @@
+.footer__column-link {
+    /*для ссылок задаём белый цвет, убираем подчёркивание*/
+    color: white;
+    text-decoration: none;
+    flex-direction: row;
+    align-items: center;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer__column-link:last-child {
+    margin-bottom: 16px;
+}

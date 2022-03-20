@@ -1,0 +1,9 @@
+.cards {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* к 920px добавлено 100px для отступов между блоками в 100px */
+    width: 1020px;
+    margin: 0 auto;
+    /* justify-content: space-between; */
+}

@@ -1,0 +1,10 @@
+.section-subtitle {
+    /*центрируем блок*/
+    margin: 0 auto;
+    /*задаём ширину блока, высоту строки, размер шрифта, начетрание текста и распологаем текст по центру*/
+    max-width: 60%;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }

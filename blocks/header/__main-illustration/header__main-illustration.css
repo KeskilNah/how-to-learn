@@ -1,0 +1,11 @@
+.header__main-illustration {
+    /* задаём абсолютное позиционирование и расположение изображению "опять двойка"*/
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 765px;
+      height: 608px;
+      /* задаём z-index ниже чем у других блоков*/
+      z-index: 2;
+      object-fit:cover;
+    }

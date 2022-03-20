@@ -1,0 +1,9 @@
+/* задаём параграфам внешний отступ снизу*/
+.two-columns__paragraph {
+    margin: 0 0 30px 0;
+}
+
+/* убираем у последнего элемента внешний отступ снизу*/
+.two-columns__paragraph:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,5 @@
+.footer {
+    /*задаём цвет текста, цвет фона и минимальную высоту для всего блока footer */
+    color: white;
+    background-color: #1f1f1f;
+  }

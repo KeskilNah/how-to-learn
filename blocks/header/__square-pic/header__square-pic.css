@@ -1,0 +1,14 @@
+.header__square-pic {
+    /* задаём абсолютное позиционирование, размеры, цвет и расположение квадрату на заднем фоне*/
+    position: absolute;
+    width: 568px;
+    height: 568px;
+    background-color: #2f80ed;
+    top: 64px;
+    right: 0;
+    /* задаём z-index ниже чем у главного изображения, что бы он был "под ним"*/
+    z-index: 1;
+    overflow: hidden;
+
+    
+}

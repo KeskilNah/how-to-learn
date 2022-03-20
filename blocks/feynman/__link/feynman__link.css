@@ -1,0 +1,13 @@
+.feynman__link {
+    /*задаём ссылке абсолютное позиционирование и расположение блока*/
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    /*задаём высоту строки, размер шрифта и цвет*/
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: 400;
+    /*убираем подчёркивание у ссылки и задаём цвет*/
+    color: #2f80ed;
+    text-decoration: none;
+  }

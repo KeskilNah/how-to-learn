@@ -1,0 +1,12 @@
+.feynman__title {
+    /*центрируем блок*/
+    margin: 0 auto;
+    /*задаём заголовку внутренний отступ, ширину, центруем текст, задаём высоту текста, размер шрифта, начертание и внешний отсутп снизу*/
+    padding-top: 100px;
+    max-width: 648px;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: 600;
+    margin-bottom: 70px;
+  }

@@ -1,0 +1,10 @@
+.kaufman {
+    /*задаём цвет фона, цвет текста, относительное позиционирование для треугольника на фоне*/
+    background-color: #1f1f1f;
+    color: white;
+    position: relative;
+    /*прямчем торчящий конец треугольника*/
+    overflow: hidden;
+    /*задаём отступ снизу*/
+    padding-bottom: 90px;
+  }

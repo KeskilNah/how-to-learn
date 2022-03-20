@@ -1,0 +1,13 @@
+.section-title {
+    /*центрируем блок*/
+    margin: 0 auto;
+    /*задаём ширину блока, добавляем отступ снизу, высоту строки, размер шрифта, начетрание текста и распологаем текст по центру*/
+    max-width: 60%;
+    margin-bottom: 20px;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+  }

@@ -1,0 +1,12 @@
+.footer__column_content_copyright {
+    /*задаём размер флекс элемента по-умолчанию*/
+    flex-basis: 711px;
+    /*создаём флекс оболочку*/
+    display: flex;
+    /*задаём направление флекс элементов колонной*/
+    flex-direction: column;
+    /*распологаем их с пространством между ними*/
+    justify-content: space-between;
+    /*задаём минимальную высоту*/
+    /* min-height: 250px; */
+  }

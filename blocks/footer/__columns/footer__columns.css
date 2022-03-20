@@ -1,0 +1,9 @@
+.footer__columns {
+    /*создаём флекс оболочку, задаём ширину, распологаем их с пространством между ними, и задаём внутренние отступы сверху и снизу*/
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 60px 0 40px;
+    min-height: 250px;
+  }

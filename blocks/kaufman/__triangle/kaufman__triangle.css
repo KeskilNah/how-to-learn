@@ -1,0 +1,11 @@
+.kaufman__triangle {
+    /*для треугольника на фоно задаём абсолютное позиционирование, сдвигаем его вправо на 210px и задаём z-index: 1, что бы он был на фоне*/
+    background-image: url(../../../images/kaufman-triangle.svg);
+    background-size: cover;
+    width: 877px;
+    height: 877px;
+    position: absolute;
+    right: -210px;
+    top: 0;
+    z-index: 1;
+  }

@@ -1,0 +1,8 @@
+.footer__author {
+    /*задаём внутренний отступ для подписи, высоту строки, размер шрифта и начертание*/
+    padding: 18px 0;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+  }

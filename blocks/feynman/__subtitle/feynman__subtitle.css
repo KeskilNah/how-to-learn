@@ -1,0 +1,9 @@
+.feynman__subtitle{
+    /*центрируем блок*/
+    margin: 0 auto;
+    /*центрируем подзаголовок, задаём высоту строки и размер шрифта*/
+    text-align: center;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: 400;
+  }

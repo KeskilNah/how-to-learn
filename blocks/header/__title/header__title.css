@@ -1,0 +1,18 @@
+.header__title {
+    /* что бы заголовок находился по центру, при уеменьшении экрана задаём ему высоту в 100%*/
+    height: 100%;
+    /* делаем флекс обёртку*/
+    display: flex;
+    /* назначаем направление флекс элементов*/
+    flex-direction: column;
+    /* центрируем его*/
+    justify-content: center;
+    max-width: 730px;
+    margin: 0 0 0 64px;
+    font-size: 102px;
+    line-height: 96px;
+    font-weight: 600;
+    /*задаём позиционирование, иначе z-index не сработает*/
+    position: relative;
+    z-index: 3;
+  }
