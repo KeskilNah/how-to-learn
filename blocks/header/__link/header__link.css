@@ -1,5 +1,10 @@
 .header__link {
-    /* убираем подчёркивание и задаём свой цвет ссылке*/
-    text-decoration: none;
-    color: #2f80ed;
-  }
+  /* убираем подчёркивание и задаём свой цвет ссылке*/
+  text-decoration: none;
+  color: #2f80ed;
+  transition: 0.2s;
+}
+
+.header__link:hover {
+  opacity: 0.7;
+}
