@@ -4,4 +4,5 @@
     margin-top: 80px;
     /*задаём z-index, что бы их не загораживал треугольник на фоне*/
     z-index: 2;
+    color: white;
   }
